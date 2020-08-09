@@ -1,0 +1,80 @@
+:root {
+  /* colors */
+  --dark-color: rgb(37, 37, 37);
+  --yellow-color: rgb(221, 221, 0);
+
+  /* fonts */
+  --text-color-white: rgb(207, 207, 207);
+  --font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-color);
+  font-family: var(--font-family);
+  color: var(--text-color-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+
+li {
+  list-style: none;
+}
+
+/* Navbar */
+
+.main-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+nav {
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 100%;
+}
+
+.nav-logo img {
+  height: 100%;
+}
+
+.nav-items-list {
+  display: flex;
+}
+
+.nav-item {
+  padding: 0 20px;
+  font-size: 17px;
+}
+
+.nav-name-container {
+  height: 100%;
+  border-left: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.nav-name {
+  margin-right: 7px;
+  margin-left: 15px;
+}
