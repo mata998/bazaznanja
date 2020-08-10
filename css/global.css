@@ -65,6 +65,17 @@ nav {
 .nav-item {
   padding: 0 20px;
   font-size: 17px;
+  transition: color 0.5s ease;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-item-selected span {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
 }
 
 .nav-name-container {

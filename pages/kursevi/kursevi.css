@@ -1,0 +1,48 @@
+.divider {
+  height: 50px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.year-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 1px;
+  margin-left: 20px;
+  flex-grow: 1;
+  background-color: var(--text-color-white);
+}
+
+.subject-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box .title {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.box .details {
+  font-size: 15px;
+}
+
+.box .time {
+  color: rgb(206, 0, 0);
+}
+
+.box .number {
+  margin-left: 10px;
+}
