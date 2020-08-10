@@ -42,16 +42,16 @@
   padding: 0 25px;
   font-size: 20px;
   border-bottom: 2px solid var(--text-color-white);
-  transition: background-color 0.5s ease;
+  cursor: pointer;
+  transition: color 0.5s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-.question:hover {
-  background-color: rgb(31, 31, 31);
-  cursor: pointer;
+.question-hover:hover {
+  color: white;
 }
 
 .question::before {
@@ -70,21 +70,16 @@
 .answer {
   background-color: var(--yellow-color);
   color: black;
-  padding: 30px 25px;
   font-size: 14px;
-  transform-origin: top;
-  transition: all 1s;
-  /* 
-  overflow: hidden;
-  padding: 0 25px;
-  line-height: 0;
-  color: transparent; */
+
+  padding: 30px 25px;
+  display: none;
 }
 
-.open {
-  /* padding: 30px 25px;
-  line-height: normal;
-  color: black; */
-  transform: scaleY(0);
-  height: 0;
+.answer-open {
+  display: block;
+}
+
+.question-open {
+  color: var(--yellow-color);
 }

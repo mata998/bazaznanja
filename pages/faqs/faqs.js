@@ -1,18 +1,14 @@
-// document.querySelectorAll(".answer").forEach(answer =>{
-//     answer.addEventListener("click", (e) => {
-
-//     })
-// })
-
-// document.querySelector(".answer").classList.toggle("open");
-
-document.querySelectorAll(".questions").forEach((question) => {
+document.querySelectorAll(".question").forEach((question) => {
   question.addEventListener("click", openCloseQuestion);
 });
 
 function openCloseQuestion(e) {
+  const question = e.target;
   const answer = e.target.nextElementSibling;
+
   console.log(answer);
 
-  answer.classList.toggle("open");
+  question.classList.toggle("question-open");
+  question.classList.toggle("question-hover");
+  answer.classList.toggle("answer-open");
 }
