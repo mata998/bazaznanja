@@ -1,0 +1,106 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(15, 15, 15);
+  height: 500px;
+  width: 500px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  width: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+form {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1 {
+}
+
+.form2 {
+}
+
+.form3 {
+}
+
+.slide-left {
+  transform: translateX(calc(-100% / 3));
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  width: 70%;
+  font-size: 14px;
+  color: gray;
+}
+
+input {
+  display: block;
+  width: 70%;
+  height: 30px;
+  margin: 5px 0 15px 0;
+
+  border: 1px solid whitesmoke;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  outline: none;
+}
+
+.button-box {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--yellow-color);
+  color: var(--yellow-color);
+
+  padding: 5px 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.left-arrow {
+  margin-left: 7px;
+}
+
+.right-arrow {
+  margin-right: 7px;
+}
