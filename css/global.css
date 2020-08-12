@@ -1,10 +1,14 @@
 :root {
   /* colors */
-  --dark-color: rgb(37, 37, 37);
-  --yellow-color: rgb(221, 221, 0);
+  --dark-color: #1a1a1a;
+  --light-gray: #c6bfac;
+  --dark-gray: #847f74;
+  --white: #fff0e3;
+  --white-hover: white;
+  --yellow-color: #ffd731;
 
   /* fonts */
-  --text-color-white: rgb(207, 207, 207);
+  --text-color-white: orange;
   --font-family: "Montserrat", sans-serif;
 }
 
@@ -12,29 +16,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 body {
   background-color: var(--dark-color);
   font-family: var(--font-family);
-  color: var(--text-color-white);
+  color: var(--white);
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color-white);
+  color: var(--white);
 }
 
 li {
   list-style: none;
 }
 
-/* Navbar */
-
 .main-container {
   width: 80vw;
   margin: 0 auto;
 }
+
+/* Navbar */
 
 nav {
   height: 40px;
@@ -42,6 +48,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 17px;
 }
 
 .nav-left {
@@ -63,29 +70,55 @@ nav {
 }
 
 .nav-item {
+  color: var(--light-gray);
   padding: 0 20px;
-  font-size: 17px;
   transition: color 0.5s ease;
 }
 
 .nav-item:hover {
-  color: white;
+  color: var(--white);
 }
 
-.nav-item-selected span {
-  color: white;
-  border-bottom: 2px solid white;
+.nav-item-selected > span {
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
   padding-bottom: 4px;
 }
 
 .nav-name-container {
   height: 100%;
-  border-left: 1px solid white;
+  border-left: 1px solid var(--white);
   display: flex;
   align-items: center;
+  padding-left: 15px;
 }
 
 .nav-name {
+  color: var(--light-gray);
   margin-right: 7px;
-  margin-left: 15px;
+}
+
+.signed-in {
+  display: none;
+}
+
+.sign-in {
+  color: var(--light-gray);
+  transition: color 0.5s ease;
+}
+
+.sign-in:hover {
+  color: var(--white);
+}
+
+/* Form */
+
+input {
+  display: block;
+  height: 30px;
+  padding: 5px;
+  background-color: var(--dark-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+  outline: none;
 }

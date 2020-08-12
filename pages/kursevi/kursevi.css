@@ -16,7 +16,7 @@ section {
   height: 1px;
   margin-left: 20px;
   flex-grow: 1;
-  background-color: var(--text-color-white);
+  background-color: var(--white);
 }
 
 .subject-section {
@@ -40,7 +40,7 @@ section {
 }
 
 .box .time {
-  color: rgb(206, 0, 0);
+  color: var(--yellow-color);
 }
 
 .box .number {

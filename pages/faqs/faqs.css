@@ -6,7 +6,7 @@
 }
 
 .icon-box {
-  border: 1px solid var(--text-color-white);
+  border: 1px solid var(--white);
   transition: color 0.5s ease;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 
 .icon-box:hover {
   cursor: pointer;
-  color: white;
+  color: var(--white-hover);
 }
 
 .icon-box:nth-child(2) {
@@ -41,7 +41,7 @@
   height: 55px;
   padding: 0 25px;
   font-size: 20px;
-  border-bottom: 2px solid var(--text-color-white);
+  border-bottom: 2px solid var(--white);
   cursor: pointer;
   transition: color 0.5s ease;
   display: flex;
@@ -51,7 +51,7 @@
 }
 
 .question-hover:hover {
-  color: white;
+  color: var(--white-hover);
 }
 
 .question::before {
