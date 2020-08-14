@@ -1,6 +1,6 @@
 document.querySelector(".next1").addEventListener("click", mid);
 document.querySelector(".next2").addEventListener("click", right);
-document.querySelector(".back1").addEventListener("click", preventSubmit);
+document.querySelector(".back1").addEventListener("click", backToLogIn);
 document.querySelector(".back2").addEventListener("click", left);
 document.querySelector(".back3").addEventListener("click", goToIndex);
 
@@ -22,6 +22,11 @@ function right(e) {
 
   document.querySelector(".slider").style.transform =
     "translateX(calc(-200% / 3))";
+}
+
+function backToLogIn(e) {
+  e.preventDefault();
+  window.location = "/pages/login/login.html";
 }
 
 function preventSubmit(e) {
