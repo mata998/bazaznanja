@@ -1,0 +1,47 @@
+.toggle-button {
+  --toggle-color: var(--white);
+  --toggle-color-active: var(--white);
+
+  --toggle-bg-color: var(--dark-gray);
+  --toggle-bg-color-active: var(--dark-gray);
+
+  --toggle-height: 10px;
+  --toggle-width: 25px;
+
+  --scale: 1.5;
+}
+
+.toggle-button {
+  position: relative;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+  -webkit-appearance: none;
+
+  background-color: var(--toggle-bg-color);
+  border-radius: 50px;
+  border: none;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  padding: 0;
+}
+
+.toggle-button:checked {
+  background-color: var(--toggle-bg-color-active);
+}
+
+.toggle-button:before {
+  content: "";
+  position: relative;
+  width: var(--toggle-height);
+  height: var(--toggle-height);
+  background-color: var(--toggle-color);
+  border-radius: 50%;
+  transform: scale(var(--scale));
+}
+
+.toggle-button:checked:before {
+  left: calc(var(--toggle-width) - var(--toggle-height));
+  background-color: var(--toggle-color-active);
+}

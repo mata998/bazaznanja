@@ -1,0 +1,50 @@
+.title {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.title i {
+  margin-right: 20px;
+}
+
+.transaction-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.header {
+  color: var(--dark-gray);
+  padding: 5px 5px;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  min-width: 350px;
+  justify-content: space-between;
+}
+
+.date {
+  min-width: 110px;
+  letter-spacing: 1px;
+}
+
+.name {
+  padding-right: 10px;
+}
+
+.price {
+  width: 120px;
+  color: var(--yellow-color);
+}
+
+.header .price {
+  color: var(--dark-gray);
+}
