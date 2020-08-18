@@ -38,13 +38,12 @@ function goToIndex(e) {
   window.location.href = "/";
 }
 
-// Drop down menu logic
+// Drop down menu logic //////////////////////
 
 const dropDown = document.querySelector(".drop-down");
 let options = document.querySelectorAll(".item");
 
 options.forEach((option) => option.addEventListener("click", openClose));
-options[0].style.display = "flex";
 let opened = false;
 
 function openClose(e) {
@@ -60,14 +59,9 @@ function openClose(e) {
 }
 
 function openDropDown() {
-  options.forEach((option) => (option.style.display = "flex"));
+  dropDown.style.overflow = "visible";
 }
 
 function closeDropDown() {
-  options = document.querySelectorAll(".item");
-  options.forEach((option, key) => {
-    if (key != 0) {
-      option.style.display = "none";
-    }
-  });
+  dropDown.style.overflow = "hidden";
 }

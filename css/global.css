@@ -35,6 +35,10 @@ li {
   list-style: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .main-container {
   width: 80vw;
   margin: 0 auto;
@@ -85,7 +89,7 @@ nav {
   padding-bottom: 4px;
 }
 
-.nav-name-container {
+.right-container {
   height: 100%;
   border-left: 1px solid var(--white);
   display: flex;
@@ -93,25 +97,31 @@ nav {
   padding-left: 15px;
 }
 
-.nav-name {
+/* Name box //////////*/
+.name-box {
+  cursor: pointer;
   color: var(--light-gray);
+}
+
+.name-box:hover {
+  color: var(--white);
+}
+
+.nav-name {
   margin-right: 7px;
 }
 
-.signed-in {
-  display: none;
-}
+/* SIGNIN btn */
 
 .sign-in {
   color: var(--light-gray);
-  /* transition: color 0.5s ease; */
 }
 
 .sign-in:hover {
   color: var(--white);
 }
 
-/* Form */
+/* Form global things /////////*/
 
 input {
   display: block;

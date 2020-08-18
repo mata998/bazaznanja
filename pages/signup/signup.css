@@ -121,6 +121,7 @@ button:hover {
   height: 60px;
   z-index: 1;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .item {
@@ -132,8 +133,6 @@ button:hover {
 
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
-
-  display: none;
 }
 
 .item img {
