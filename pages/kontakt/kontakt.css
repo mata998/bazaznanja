@@ -1,0 +1,54 @@
+.fax-container {
+  margin-top: 80px;
+  display: flex;
+}
+
+.fon,
+.ekof {
+  width: 50%;
+}
+
+.fon {
+  border-right: 2px solid var(--light-gray);
+}
+
+.ekof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  font-size: 27px;
+  margin-bottom: 60px;
+}
+
+img {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.info-box {
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.info {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.info i {
+  width: 45px;
+  font-size: 30px;
+}
+
+.info-box a {
+  margin-left: 45px;
+  color: var(--yellow-color);
+  font-size: 18px;
+}

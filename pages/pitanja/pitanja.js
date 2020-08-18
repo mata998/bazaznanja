@@ -9,8 +9,5 @@ checkbox.addEventListener("change", () => {
 });
 
 function changeColors() {
-  const temp = sajt.style.color;
-
-  sajt.style.color = fax.style.color;
-  fax.style.color = temp;
+  [sajt.style.color, fax.style.color] = [fax.style.color, sajt.style.color];
 }
