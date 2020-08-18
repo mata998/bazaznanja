@@ -32,23 +32,23 @@ img {
 }
 
 .info-box {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 40px;
 }
 
 .info {
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   align-items: center;
 }
 
 .info i {
-  width: 45px;
-  font-size: 30px;
+  width: 40px;
+  font-size: 27px;
 }
 
 .info-box a {
-  margin-left: 45px;
+  margin-left: 40px;
   color: var(--yellow-color);
-  font-size: 18px;
+  font-size: 14px;
 }
