@@ -58,65 +58,10 @@ input {
 
 /* FORM 1 /////////////*/
 
-.logo {
-  width: 80px;
-  height: 80px;
-}
-
-.logo img {
-  width: 100%;
-}
-
 .title {
   font-size: 25px;
   margin-top: 15px;
   margin-bottom: 20px;
-}
-
-.remember-me-box {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.remember-me-box .left {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.check-box {
-  height: 20px;
-  width: 20px;
-  border: 1px solid var(--white);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 12px;
-
-  margin-right: 7px;
-}
-
-.check-box i {
-  display: none;
-}
-
-.checked > i {
-  display: block;
-}
-
-.remember-me-box p {
-  font-size: 15px;
-  color: var(--light-gray);
-}
-
-.remember-me-box span {
-  font-size: 15px;
-  color: var(--yellow-color);
-  cursor: pointer;
 }
 
 button {
@@ -135,12 +80,4 @@ button {
 
 button:hover {
   cursor: pointer;
-}
-
-.sign-up {
-  color: var(--light-gray);
-}
-
-.sign-up a {
-  color: var(--yellow-color);
 }

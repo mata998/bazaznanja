@@ -97,22 +97,22 @@ button:hover {
 
 /* FORM 2 */
 
-.name-box {
+.form-name-box {
   width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
-.name-box .left,
-.name-box .right {
+.form-name-box .left,
+.form-name-box .right {
   width: 47%;
 }
 
-.form2 .name-box label {
+.form2 .form-name-box label {
   width: 100%;
 }
 
-.form2 .name-box input {
+.form2 .form-name-box input {
   width: 100%;
 }
 

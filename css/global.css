@@ -35,10 +35,6 @@ li {
   list-style: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .main-container {
   width: 80vw;
   margin: 0 auto;
@@ -89,18 +85,34 @@ nav {
   padding-bottom: 4px;
 }
 
+/* Right container */
+
 .right-container {
   height: 100%;
   border-left: 1px solid var(--white);
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
+  z-index: 10;
+}
+
+/* Drop down box */
+
+.drop-down-box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.drop-down-box:hover {
+  overflow: visible;
 }
 
 /* Name box //////////*/
 .name-box {
   cursor: pointer;
   color: var(--light-gray);
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .name-box:hover {
@@ -111,10 +123,47 @@ nav {
   margin-right: 7px;
 }
 
+/* Drop down menu */
+
+.nav-drop-down {
+  background-color: var(--white);
+  padding: 0 10px;
+  border: 1px solid var(--dark-color);
+}
+
+.drop-item {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+
+  padding: 10px 5px;
+  border-bottom: 1px solid var(--dark-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop-item:last-of-type {
+  border: none;
+}
+
+.drop-item i {
+  width: 15px;
+  text-align: center;
+}
+.drop-item:hover {
+}
+
 /* SIGNIN btn */
 
 .sign-in {
   color: var(--light-gray);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .sign-in:hover {
@@ -131,4 +180,8 @@ input {
   color: var(--white);
   border: 1px solid var(--white);
   outline: none;
+}
+
+.hidden {
+  display: none;
 }
