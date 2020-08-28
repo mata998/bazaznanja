@@ -1,0 +1,63 @@
+.divider {
+  height: 50px;
+}
+
+section {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 19px;
+}
+
+.more {
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: 13px;
+  margin: 0 20px;
+}
+
+.more:hover {
+  cursor: pointer;
+  color: var(--light-gray);
+  border-color: var(--light-gray);
+}
+
+.line {
+  height: 1px;
+  flex-grow: 1;
+  background-color: var(--white);
+}
+
+.subject-section {
+  display: flex;
+  gap: 50px;
+}
+
+.subject-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.subject-box i {
+  display: block;
+  font-size: 70px;
+  color: var(--yellow-color);
+}
+
+.subject-box p {
+  color: var(--light-gray);
+  font-size: 14px;
+}
