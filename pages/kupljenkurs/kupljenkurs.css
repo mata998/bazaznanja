@@ -115,13 +115,18 @@ iframe {
   margin-bottom: 50px;
   font-size: 15px;
 }
+
 .section {
   margin-top: 10px;
+  padding-right: 30px;
 }
 
 .section-title {
   cursor: pointer;
   position: relative;
+  font-size: 17px;
+
+  /* border-bottom: 1px solid var(--light-gray); */
 }
 
 .section-title::before {
